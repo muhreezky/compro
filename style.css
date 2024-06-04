@@ -111,7 +111,6 @@
   justify-content: space-between;
   align-items: center;
   background-color: #222;
-  /* color: white; */
   padding: 10px 20px;
   position: relative;
   z-index: 10;
@@ -162,6 +161,9 @@
 
 body {
   margin: 0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
 .active-button {
@@ -171,9 +173,73 @@ body {
   border-radius: 10px;
 }
 
+.input {
+  background-color: #f4f4f4;
+  border-radius: 9px;
+  outline: 0;
+  border: 1.5px solid #272733;
+  padding: 10px 15px;
+  transition: border 0.1s ease-in-out;
+  font-size: 14px;
+}
+
+.input:focus {
+  border: 2.5px solid #333333;
+}
+
 .active-link {
-  text-decoration: underline !important;
+  /* text-decoration: underline !important; */
   font-weight: bolder;
+}
+
+.gridded {
+  display: grid;
+  gap: 15px;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.card {
+  box-shadow: #222 6px 5px 5px;
+  padding: 10px 15px;
+  border-radius: 10px;
+  border: 1.7px solid #e5e5e5;
+}
+
+.w-full {
+  width: 100%;
+}
+
+footer {
+  flex: none;
+}
+
+.button {
+  background-color: #252525;
+  padding: 15px 20px;
+  border: 0;
+  border-radius: 10px;
+  transition: transform .1s ease-in-out, background-color .05s ease-in-out;
+  color: white;
+}
+
+.button.button-green {
+  background-color: #00aa00;
+}
+
+.button.button-green:hover {
+  background-color: #006600;
+}
+
+.no-decoration {
+  text-decoration: none;
+}
+
+.button:hover {
+  background-color: #343434;
+}
+
+.button:active {
+  transform: scale(0.8);
 }
 
 @media screen and (max-width: 768px) {
@@ -190,6 +256,9 @@ body {
     transition: opacity 0.3s ease, visibility 0.3s ease, transform 0.3s ease;
   }
 
+  .gridded {
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+  }
 
   .nav-links.open {
     opacity: 1;
