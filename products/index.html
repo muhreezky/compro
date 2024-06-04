@@ -13,6 +13,26 @@
     <link rel="stylesheet" href="../style.css" />
   </head>
   <body class="poppins-regular">
+    <style>
+      .products {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 30px;
+      }
+
+      @media screen and (max-width: 768px) {
+        .products {
+          grid-template-columns: repeat(2, minmax(0, 1fr));
+        }
+      }
+
+      @media screen and (max-width: 640px) {
+        .products {
+          grid-template-columns: repeat(1, minmax(0, 1fr));
+        }
+      }
+
+    </style>
     <header>
       <nav class="nav">
         <div class="nav-logo">
@@ -41,6 +61,81 @@
         </div>
       </nav>
     </header>
+    <main style="padding: 15px 25px">
+      <h1 class="poppins-extrabold">Produk Kami</h1>
+      <section class="products">
+        <div
+          class="card"
+          style="display: grid; flex-direction: column; gap: 20px"
+        >
+          <img
+            loading="lazy"
+            src="../images/kanacharenji.png"
+            style="max-width: 100%"
+            alt="Kana Charenji Game"
+          />
+          <div class="poppins-bold" style="font-size: 25px; flex: none">
+            Kana Charenji
+          </div>
+        </div>
+        <div
+          class="card"
+          style="display: grid; flex-direction: column; gap: 20px"
+        >
+          <img
+            loading="lazy"
+            src="../images/keynerdy.png"
+            style="max-width: 100%"
+            alt="KeyNerdy"
+          />
+          <div class="poppins-bold" style="font-size: 25px; flex: none">
+            KeyNerdy Type Speed Game
+          </div>
+        </div>
+        <div
+          class="card"
+          style="display: grid; flex-direction: column; gap: 20px"
+        >
+          <img
+            loading="lazy"
+            src="../images/minisocial.png"
+            style="max-width: 100%"
+            alt="MiniSocial App"
+          />
+          <div class="poppins-bold" style="font-size: 25px; flex: none">
+            MiniSocial Micro Socmed
+          </div>
+        </div>
+        <div
+          class="card"
+          style="display: grid; flex-direction: column; gap: 20px"
+        >
+          <img
+            loading="lazy"
+            src="../images/multiwarehouse.png"
+            style="max-width: 100%"
+            alt="Multiwarehouse"
+          />
+          <div class="poppins-bold" style="font-size: 25px; flex: none">
+            Multiwarehouse E-commerce
+          </div>
+        </div>
+        <div
+          class="card"
+          style="display: grid; flex-direction: column; gap: 20px"
+        >
+          <img
+            loading="lazy"
+            src="../images/rahazzia.png"
+            style="max-width: 100%"
+            alt="Rahazzia"
+          />
+          <div class="poppins-bold" style="font-size: 25px; flex: none">
+            Rahazzia
+          </div>
+        </div>
+      </section>
+    </main>
     <script>
       const hamburger = document.getElementById("nav-hamburger");
       const links = document.querySelector(".nav-links");
