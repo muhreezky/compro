@@ -13,6 +13,18 @@
     <link rel="stylesheet" href="../style.css" />
   </head>
   <body class="poppins-regular">
+    <style>
+      article {
+        display: flex;
+        gap: 30px;
+      }
+
+      @media screen and (max-width: 768px) {
+        article {
+          flex-direction: column;
+        }
+      }
+    </style>
     <header>
       <nav class="nav">
         <div class="nav-logo">
@@ -41,6 +53,37 @@
         </div>
       </nav>
     </header>
+    <main style="padding: 15px">
+      <div class="card" style="padding: 20px 30px">
+        <h1 class="poppins-bold" style="font-size: 35px">Tentang Kami</h1>
+        <article>
+          <img
+            loading="lazy"
+            src="../images/me.jpg"
+            class="myphoto"
+            alt="Muhammad Rizkiansyah's Photo"
+            style="
+              max-width: 250px;
+              border-radius: 15px;
+              box-shadow: #333 5px 5px 6px;
+            "
+          />
+          <div>
+            Semuanya bermula dari seorang bernama Muhammad Rizkiansyah, yang
+            pada awalnya membuka jasa bantuan tugas dan aplikasi digital. Pada
+            saat itu, layanan ini hanya dipasarkan di lingkungan sekitar dan
+            teman-teman saja. Waktu demi waktu berlalu, akhirnya didirikanlah
+            sebuah studio bernama MuhReezky Software, yang tak hanya menawarkan
+            jasa konsultasi terkait dunia digital, tetapi juga membangun produk
+            digital yang dapat digunakan untuk meringankan berbagai pekerjaan.
+            Kami juga menawarkan pembuatan aplikasi khusus untuk membantu bisnis
+            anda. Tertarik mencoba? Ataukah masih ragu dan ingin berkonsultasi?
+            Segera hubungi kami melalui halaman kontak di website ini. Kami akan
+            membalas sesegera mungkin
+          </div>
+        </article>
+      </div>
+    </main>
     <script>
       const hamburger = document.getElementById("nav-hamburger");
       const links = document.querySelector(".nav-links");
