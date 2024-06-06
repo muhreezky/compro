@@ -236,10 +236,11 @@ footer {
 
 .button:hover {
   background-color: #343434;
+  cursor: pointer;
 }
 
 .button:active {
-  transform: scale(0.8);
+  transform: scale(0.91);
 }
 
 @media screen and (max-width: 768px) {

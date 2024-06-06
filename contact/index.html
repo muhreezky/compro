@@ -41,6 +41,61 @@
         </div>
       </nav>
     </header>
+    <main style="padding: 15px">
+      <form action="https://api.web3forms.com/submit" method="POST" style="padding: 15px 25px" class="card">
+        <h1>Hubungi Kami</h1>
+        <input type="hidden" name="access_key" value="28b12dbd-5ab5-4d69-a0d4-bbc75c3f2ecb">
+        <div style="display: flex; flex-direction: column; gap: 24px; padding: 30px 40px;">
+          <section style="display: flex; flex-direction: column; gap: 10px;">
+            <label for="name">Nama Anda</label>
+            <input
+              class="input poppins-regular"
+              name="name"
+              id="name"
+              placeholder="Isi nama anda di sini"
+              style="font-size: 16px;"
+              required
+            />
+          </section>
+          <section style="display: flex; flex-direction: column; gap: 10px;">
+            <label for="email">E-mail</label>
+            <input
+              type="email"
+              class="input poppins-regular"
+              name="email"
+              id="email"
+              placeholder="Tuliskan alamat e-mail aktif anda"
+              style="font-size: 16px;"
+              required
+            />
+          </section>
+          <section style="display: flex; flex-direction: column; gap: 10px;">
+            <label for="company">Asal Perusahaan (opsional)</label>
+            <input
+              class="input poppins-regular"
+              name="company"
+              id="company"
+              placeholder="Asal perusahaan atau perusahaan yang anda kelola"
+              style="font-size: 16px;"
+            />
+          </section>
+          <section style="display: flex; flex-direction: column; gap: 10px;">
+            <label for="message">Pesan atau Pertanyaan</label>
+            <textarea
+              class="input poppins-regular"
+              name="message"
+              id="message"
+              placeholder="Tuliskan pesan, pertanyaan, kritik dan saran, atau apapun itu"
+              style="font-size: 16px;"
+              required
+            ></textarea>
+          </section>
+          <button type="submit" class="button poppins-medium" style="font-size: 18px; width: 100%;">
+            Kirim
+          </button>
+        </div>
+      </form>
+    </main>
     <script>
       const hamburger = document.getElementById("nav-hamburger");
       const links = document.querySelector(".nav-links");
