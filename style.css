@@ -209,8 +209,9 @@ body {
   width: 100%;
 }
 
-footer {
-  flex: none;
+main {
+  flex: 1;
+  padding: 15px;
 }
 
 .button {
